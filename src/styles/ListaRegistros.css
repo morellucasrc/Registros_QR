@@ -1,0 +1,132 @@
+.lista-container {
+  padding: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* fondo semitransparente */
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  backdrop-filter: blur(4px); /* efecto glass */
+}
+
+.filtros-genero {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.filtros-genero button {
+  background: none;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtros-genero button:hover {
+  background: white;
+  color: #004d4d;
+  transform: scale(1.05);
+}
+
+.filtros-genero .active {
+  background: white;
+  color: #004d4d;
+}
+
+.resumen {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.btn-borrar {
+  background: crimson;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.btn-borrar:hover {
+  background-color: #a60023;
+  transform: scale(1.05);
+}
+
+.tarjetas-usuarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.asistio {
+  border-left: 6px solid #00e676;
+}
+
+.no-asistio {
+  border-left: 6px solid #ff1744;
+}
+
+.copiar-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.copiar-info:hover {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+.fecha-evento {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tarjetas-usuarios {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resumen {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjetas-usuarios {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros-genero button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .btn-borrar {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}

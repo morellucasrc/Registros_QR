@@ -1,0 +1,34 @@
+/* styles.css*/
+.app-container {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.form-container,
+.scanner-container {
+  margin-top: 30px;
+}
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.qr-output img {
+  margin-top: 20px;
+  width: 200px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}

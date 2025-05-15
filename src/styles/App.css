@@ -1,0 +1,83 @@
+
+
+/* Fondo global con imagen y efectos */
+body {
+  background-image: url('https://elements-resized.envatousercontent.com/elements-video-cover-images/e2b2eb7f-d873-47b8-a369-fb269444ed40/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=4c25483fbb96d58d681c483fc4d334d72e3251d5cb84cda6aaee30327532cad9');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Títulos */
+h1, h2 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  backdrop-filter: blur(10px); /* Efecto de difuminado */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo de los inputs y botones */
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+  color: #fff;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1259a3;
+}
+
+/* Estilo para la sección QR */
+.qr-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
